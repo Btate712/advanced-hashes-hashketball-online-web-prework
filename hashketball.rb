@@ -5,7 +5,7 @@ def game_hash
     :home => {
       :team_name => "Brookly Nets",
       :colors => ["Black", "White"],
-      :players => [
+      :players => {
         "Alan Anderson" => {
           :number => 0,
           :shoe => 16,
@@ -51,11 +51,11 @@ def game_hash
           :steals => 4,
           :blocks => 11,
           :slam_dunks => 11},
-      ]},
+      }},
     :away => {
       :team_name => "Charlotte Hornets",
       :colors => ["Turquoise", "Purple"],
-      :players => [
+      :players => {
         "Jeff Adrien" => {
           :number => 4,
           :shoe => 18,
@@ -101,14 +101,13 @@ def game_hash
           :steals => 22,
           :blocks => 5,
           :slam_dunks => 12},
-      ]}
+      }}
     }
 end
 
 def num_points_scored(player)
   home_players = game_hash[:home][:players]
   away_players = game_hash[:away][:players]
-  home_players.each do |name|
-    binding.pry
+
   end
 end
