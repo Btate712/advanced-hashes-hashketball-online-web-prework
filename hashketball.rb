@@ -108,7 +108,7 @@ end
 def num_points_scored(player)
   game_hash.each do |team, team_data|
     team_data.each do |player|
-      if player.key == "Alan Anderson"
+      if player.key("Alan Anderson")
         return player[:points]
       end
     end
