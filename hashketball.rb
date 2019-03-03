@@ -147,7 +147,7 @@ def player_numbers(team_name)
     if team_data[:team_name] == team_name
       #created sorted array of jersey numbers
       team_data[:players].each do |player, stats|
-        binding.pry 
+        binding.pry
         jersey_numbers.push(player[:number])
       end
     end
