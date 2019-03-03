@@ -109,7 +109,6 @@ def num_points_scored(player)
   home_players = game_hash[:home][:players]
   away_players = game_hash[:away][:players]
   home_players.each do |name|
-    binding.pry 
-  end  
+    binding.pry
+  end
 end
-
