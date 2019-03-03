@@ -107,9 +107,10 @@ end
 
 def num_points_scored(player)
   game_hash.each do |team, team_data|
-    binding.pry
-    if team_data[players].include?(player)
-      return team_data[players][player][:points]
+    team_data.each do |player|
+      if player.key == "Alan Anderson"
+        return player[:points]
+      end
     end
   end
 end
