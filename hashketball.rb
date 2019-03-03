@@ -103,3 +103,11 @@ def game_hash
       ]}
     }
 end
+
+def num_points_scored(player)
+  game_hash.each do |team, team_data|
+    if team_data[players].include?(player)
+      return team_data[players][player][:points]
+    end
+  end
+end
