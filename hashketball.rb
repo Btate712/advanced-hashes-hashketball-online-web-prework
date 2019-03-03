@@ -153,3 +153,13 @@ def player_numbers(team_name)
   end
   jersey_numbers
 end
+
+def player_stats(player)
+  game_hash.each do |team, team_data|
+    team_data.each do |name, stats|
+      if player == name
+        return stats
+      end
+    end
+  end
+end
