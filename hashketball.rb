@@ -108,7 +108,7 @@ end
 def num_points_scored(player)
   game_hash.each do |team, team_data|
     team_data.each do |team_stat, stat_info|
-      binding.pry 
+      binding.pry
       if stat_info.include?(player)
         return stat_info[:points]
       end
